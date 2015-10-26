@@ -1,0 +1,600 @@
+.container{
+  width: 100%;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #EDEFED;
+}
+
+section{
+  width: 90%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX--- header slider---XXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX--- header---XXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+header{
+  border: 1px solid black;
+  background-image: url(../img/madrid.jpg);
+  background-size: cover;
+}
+
+header li{
+  display: inline-block;
+}
+
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 136px;
+  height: 61px;
+}
+.logo img{
+  width: 100%;
+}
+
+/*-------------------nav--------------*/
+nav{
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 6.25rem;
+}
+
+nav a{
+  margin: 0 1em;
+}
+nav li{
+  padding: 0.5em 0;
+}
+
+nav ul li:first-child{
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 4em;
+}
+header h1,header h3{
+  text-align: center;
+  margin: 0;
+}
+
+h1,header h3, header a{
+  color:white;
+}
+
+header h3{
+  margin-bottom: 1em;
+}
+
+.emploi{
+  width: 10rem;
+  height: 2.5rem;
+  display: block;
+  text-align: center;
+  line-height: 2.5rem;
+  margin:  auto;
+  margin-bottom: 8em;
+  border: 1px solid grey;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.5);
+  font-weight: bold;
+}
+
+.emploi:hover{
+  background-color: rgba(0,0,0,0.6);
+}
+
+nav ul li:first-child:hover{
+  background-color: rgba(0,0,0,0.6);
+}
+
+/*-------------------reservation----------------*/
+.search{
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.reservation{
+  background-color: rgba(0,0,0,0.6);
+}
+
+header input{
+  width: 12.5em;
+  height: 3em;
+}
+
+header form input:first-child{
+  width: 25em;
+}
+
+header form input:first-child{
+  height: 3.45em;
+}
+
+header form select{
+  width: 12.5em;
+}
+
+header button{
+  width: 12.5em;
+  border-color: #FF7E82;
+  border-bottom-color: #FF7E82;
+  background-color: #FF7E82;
+  color: white;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXX --section revenus--XXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.revenus{
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.revenus article{
+  width: 35%;
+}
+
+.revenus h2, .revenus p{
+  width: 70%;
+  margin: auto;
+}
+
+.revenus h2{
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.revenus article a{
+  font-weight: bold;
+  display: block;
+  border: 1px solid #009AAB;
+  border-radius: 2px;
+  background-color: #009AAB;
+  color: white;
+  width: 70%;
+  margin: 2em auto;
+  text-align: center;
+  padding: 1em 0;
+
+}
+
+.flexslider{
+  height: 345px;
+  width: 65%;
+}
+
+.flexslider img{
+  width: 100%;
+  height: 344px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX---week-end---XXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXX*/
+.weekends{
+  margin: 2em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.weekends h2,.weekends p{
+  color: #565A5C;
+  text-align: center;
+  width: 100%;
+
+}
+
+.weekends h2{
+  font-weight: bold;
+}
+/*------------------- article 30%---------------------------*/
+.weekends .annecy,.geneve,.montpellier,.susana,.lisbonne,.dam,.rome,.charlie,.london,.berlin,.venise{
+  width: 30%;
+  height: 340px;
+  margin-bottom: 2em;
+}
+
+.weekends article a{
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  line-height: 340px;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.annecy{
+  background-image: url(../img/annecy2.jpg);
+  background-size: cover;
+}
+
+.geneve{
+  background-image: url(../img/geneve.jpg);
+  background-size: cover;
+}
+
+.montpellier{
+  background-image: url(../img/montpellier.jpg);
+  background-size: cover;
+}
+
+.susana{
+  background-image: url(../img/susana.jpg);
+  background-size: cover;
+}
+
+.lisbonne{
+  background-image: url(../img/lisbonne2.jpg);
+  background-size: cover;
+}
+
+.rome{
+  background-image: url(../img/rome.jpg);
+  background-size: cover;
+}
+
+.dam{
+  background-image: url(../img/dam.jpg);
+  background-size: cover;
+}
+
+.london{
+  background-image: url(../img/london.jpg);
+  background-size: cover;
+}
+
+.berlin{
+  background-image: url(../img/berlin.jpg);
+  background-size: cover;
+}
+
+.venise{
+  background-image: url(../img/venise.jpg);
+  background-size: cover;
+}
+
+.charlie{
+  background-image: url(../img/villa.jpg);
+  background-size: cover;
+}
+
+.susana h3,.charlie h3{
+margin-top: 1em;
+margin-bottom: 0;
+}
+
+.susana p,.tarif,.charlie p{
+  color: white;
+  margin-top: 0;
+}
+ .charlie .tarif,.susana .tarif{
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: left;
+  width: 3em;
+  text-align: center;
+  margin-top: 2em;
+  padding: 0.8em;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.portrait{
+  width: 58px;
+  height: 58px;
+  border-radius: 50px;
+  margin:0 auto;
+  margin-top: 7em;
+  border: 2px solid white;
+}
+
+.susana .portrait{
+  background-image: url(../img/charlie.png);
+  background-size: cover;
+}
+
+.charlie .portrait{
+  background-image: url(../img/charlie2.jpg);
+  background-size: cover;
+}
+
+/*-------------------article 65% ----------------------------*/
+.lyon,.ny{
+  width: 65%;
+  margin-bottom: 2em;
+}
+.lyon{
+  background-image: url(../img/lyon.jpg);
+  background-size: cover;
+}
+
+.ny{
+  background-image: url(../img/ny3.jpg);
+  background-size: cover;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXX---monde---XXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.more{
+  display: block;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin:3em auto 1em;
+  padding: 1em 0;
+  width: 20em;
+  text-align: center;
+  color: #565A5C;
+  background-color: white;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXx---flex2---XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.flex2,.flex2 .flexslider{
+  width: 100%;
+  height: 600px;
+}
+
+.flex2 img{
+  height: 600px;
+}
+.flex2 .slides li:first-child{
+  background-image: url(../img/pub3.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+.flex2 h2, .flex2 p,.flex2 a{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  height: auto;
+  display: block;
+}
+
+.flex2 h2{
+  font-size: 4.5em;
+  color: white;
+  margin-top: 2em;
+}
+
+.flex2 p{
+  width: 45%;
+  font-weight: bold;
+  margin: 2em auto;
+}
+
+.flex2 a{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+  color: white;
+  font-weight: bold;
+  width:15%;
+  padding: 1em 0;
+  border-radius: 2px;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXX--communauté--XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.communaute{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.communaute h2{
+  width: 100%;
+  text-align: center;
+}
+.communaute article{
+  width: 23%;
+  height: 492px;
+}
+
+.communaute article a:hover{
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+.create img{
+  width: 100%;
+  height:100%;
+}
+
+.alice a,.business a,.hebergement a,.create a{
+  display: block;
+  width: 100%;
+  height: 492px;
+}
+
+.travels{
+  background-image: url(../img/alice2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.business{
+  background-image: url(../img/back1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hebergement{
+  background-image: url(../img/nina3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.create{
+  background-image: url(../img/create3.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.text,.text2,.voyage p,.affaires p,.location p,.createlog p{
+  color:white;
+  text-align: center;
+}
+
+.text{
+  margin-top: 15em;
+}
+
+.text2 p{
+  margin: auto;
+}
+
+.text2 p:hover{
+  text-decoration: underline;
+}
+
+.voyage p,.affaires p,.location2 p,.createlog p{
+  width: 25%;
+  margin: auto;
+  border: 1px solid #007A87;
+  background-color: #007A87;
+  padding: 0.5em 0;
+}
+
+.affaires p,.location2 p{
+  width: 50%;
+}
+
+.createlog p{
+  visibility: hidden;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXX---footer---XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+footer {
+  background-image: url(../img/wallfoot.jpg);
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  margin-top: 2em;
+}
+.details{
+  width: 80%;
+  margin:2em auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+footer a{
+  color: white;
+}
+
+footer h3{
+  margin-top: inherit;
+}
+
+footer article{
+  width:15%;
+  margin: 0 2em;
+  margin-bottom: 2em;
+
+}
+
+footer form select{
+  width: 15em;
+  height: 3em;
+  margin-bottom: 1em;
+}
+
+/*------------------------ reseaux sociaux--------------------*/
+.sprites h2{
+  text-align: center;
+}
+
+.sprites a{
+  display: block;
+  border-radius: 50px;
+  width: 3em;
+  height: 3em;
+}
+
+.sprites ul{
+  width: 33%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.sprites li{
+  display: inline-block;
+}
+
+.sprites p{
+  text-align: center;
+}
+
+.facebook{
+  background-image: url(../img/fb3.png);
+  background-size: cover;
+}
+
+.twitter{
+  background-image: url(../img/twitt.png);
+  background-size: cover;
+}
+
+.google{
+  background-image: url(../img/google.png);
+  background-size: cover;
+}
+
+.linkedin{
+  background-image: url(../img/in2.png);
+  background-size: cover;
+}
+
+.pinterest{
+  background-image: url(../img/pint.png);
+  background-size: cover;
+}
+
+.insta{
+  background-image: url(../img/insta.png);
+  background-size: cover;
+}
+
+.youtube{
+  background-image: url(../img/youtube.png);
+  background-size: cover;
+}
+
+.sprites p{
+  margin-bottom: 2em;
+}
