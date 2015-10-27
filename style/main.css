@@ -142,8 +142,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: hidden;
-  height: 25em;
-  width: 25em;
 }
 
 .vertical li {
@@ -175,11 +173,17 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 .vertical li:hover ul{
   overflow-y: visible;
   background-color: white;
+  max-height: 25em;
 }
 .secondnav{
   position: relative;
   right: 15em;
+  top: 5.1em;
 }
+.secondnav li a:hover {
+  color:red;
+  text-align: center;
+  }
 .secondnav a{
   display: block;
   padding: 1em;
@@ -206,8 +210,12 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 .secondnav a::before{
   content: url(../img/page3.png);
   position: relative;
-  top: 10px;
+  top: 5px;
   left: -30px;
+}
+
+.secondnav li:last-child a::before{
+  content: none;
 }
 
 .vertical input{
