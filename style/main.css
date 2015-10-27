@@ -1,5 +1,6 @@
 .container{
   width: 100%;
+
 }
 
 body{
@@ -14,6 +15,7 @@ section{
 ul{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 li{
@@ -24,17 +26,21 @@ a{
   text-decoration: none;
 }
 
-/*XXXXXXXXXXXXXXXXXXXXXXXXXX--- header slider---XXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-
-
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXX--- header---XXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 header{
-  border: 1px solid black;
+  /*border: 1px solid black;
   background-image: url(../img/madrid.jpg);
-  background-size: cover;
+  background-size: cover;*/
+
+}
+
+video{
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  top: -58px;
 }
 
 header li{
@@ -46,6 +52,7 @@ header li{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .logo{
@@ -68,14 +75,15 @@ nav{
 nav a{
   margin: 0 1em;
 }
-nav li{
-  padding: 0.5em 0;
+.vertical li{
+  padding: 1em 0;
 }
 
-nav ul li:first-child{
+.firstli{
   border: 2px solid white;
   border-radius: 3px;
 }
+
 
 h1{
   text-transform: uppercase;
@@ -112,10 +120,105 @@ header h3{
   background-color: rgba(0,0,0,0.6);
 }
 
-nav ul li:first-child:hover{
+.firstli:hover{
   background-color: rgba(0,0,0,0.6);
 }
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX--- menu vertical---XXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.vertical, .vertical ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.vertical{
+  color: #566173;
+}
+
+.vertical ul {
+  position: absolute;
+}
+.vertical li ul{
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 25em;
+  width: 25em;
+}
+
+.vertical li {
+  display: inline-block;
+}
+
+.vertical input{
+  width: 100%;
+  padding: 1em 0;
+}
+
+.vertical li li {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical li:hover li{
+  width: 90%;
+  max-height: 15em;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+  background-color: white;
+  transition: all 1.5s;
+}
+
+.vertical li:hover ul{
+  overflow-y: visible;
+  background-color: white;
+}
+.secondnav{
+  position: relative;
+  right: 15em;
+}
+.secondnav a{
+  display: block;
+  padding: 1em;
+  color: grey;
+}
+
+.vertical li:hover li:first-child, .vertical li:hover li:nth-child(2),.vertical li:hover li:last-child{
+  width: 100%;
+}
+.vertical li:hover li:nth-child(2){
+  background-color: #EDEFED;
+}
+.vertical li:hover li:nth-child(8){
+  border-bottom: none;
+}
+.secondnav li:last-child a{
+  color: red;
+}
+
+.vertical li:hover li:last-child {
+  border-top: 1px solid grey;
+}
+
+.secondnav a::before{
+  content: url(../img/page3.png);
+  position: relative;
+  top: 10px;
+  left: -30px;
+}
+
+.vertical input{
+  background-image: url(../img/loupe2.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+.vertical input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    padding-left: 1.5em;
+    border: none;
+}
 /*-------------------reservation----------------*/
 .search{
   display: flex;
@@ -127,24 +230,24 @@ nav ul li:first-child:hover{
   background-color: rgba(0,0,0,0.6);
 }
 
-header input{
+.reservation input{
   width: 12.5em;
   height: 3em;
 }
 
-header form input:first-child{
+.reservation form input:first-child{
   width: 25em;
 }
 
-header form input:first-child{
+.reservation form input:first-child{
   height: 3.45em;
 }
 
-header form select{
+.reservation form select{
   width: 12.5em;
 }
 
-header button{
+.reservation button{
   width: 12.5em;
   border-color: #FF7E82;
   border-bottom-color: #FF7E82;
@@ -291,8 +394,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXX*/
 }
 
 .susana h3,.charlie h3{
-margin-top: 1em;
-margin-bottom: 0;
+  margin: auto;
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .susana p,.tarif,.charlie p{
@@ -402,6 +508,13 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
   padding: 1em 0;
   border-radius: 2px;
 }
+
+.flex2  li:nth-child(2) a, .flex2  li:nth-child(3) a{
+  display: block;
+  width: 100%;
+}
+
+
 /*XXXXXXXXXXXXXXXXXXXXXXXXX--communauté--XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 .communaute{

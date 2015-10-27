@@ -18,15 +18,38 @@
   <body>
     <div class="container">
 
-    <header class="slideshow">
+    <header>
+
+        <video loop autoplay muted width="1270px" height="551px">
+          <source src="video/bnb.mp4" type="video/mp4">
+        </video>
+
       <div class="navigation">
         <div class="logo">
           <a href="#"><img src="img/logo3.png" alt="logo airbnb" /></a>
         </div>
         <nav>
-            <ul>
-              <li><a href="#">Devenez hôte</a></li>
-              <li><a href="#">Aide</a></li>
+            <ul class="vertical">
+              <li class="firstli"><a href="#">Devenez hôte</a></li>
+              <li>
+                <a href="#">Aide</a>
+                <ul class="secondnav">
+                  <li>
+                    <form class="" method="post">
+                      <input type="search" placeholder="Comment pouvons-nous vous aider?" name="search">
+                    </form>
+                  </li>
+                  <li><p>Articles recommandés</p></li>
+                  <li><a href="#">Guide de démarrage</a></li>
+                  <li><a href="#">Puis-je modifier une réservation qui a déjà été confirmée?</a></li>
+                  <li><a href="#">Combien dois-je payer pour une réservation</a></li>
+                  <li><a href="#">Comment Airbnb procède aux paiements</a></li>
+                  <li><a href="#">Qu'est-ce-qu'une identification vérifiée?</a></li>
+                  <li><a href="#">Quelles sont les conditions d'annulations?</a></li>
+                  <li><a href="#">Centre d'aide</a></li>
+                </ul>
+              </li>
+
               <li><a href="#">Inscription</a></li>
               <li><a href="#">Connexion</a></li>
             </ul>
@@ -178,10 +201,10 @@
               <a href="#">Commencez à explorer</a>
             </li>
             <li>
-              <img src="img/pub4.jpg" />
+              <a href="#"><img src="img/pub4.jpg" /></a>
             </li>
             <li>
-              <img src="img/pub.jpg" />
+              <a href="#"><img src="img/pub.jpg" /></a>
             </li>
           </ul>
       </div>
